@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateContact" 
+    android:background="#8ad0e8">
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtUpdateName"
+        android:layout_marginTop="37dp"
+        android:text="New Phone No." />
+
+    <EditText
+        android:id="@+id/txtUpdatePhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/checkedTextView2"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <CheckedTextView
+        android:id="@+id/checkedTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:text="Enter New Name" />
+
+    <EditText
+        android:id="@+id/txtUpdateName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/checkedTextView1"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <CheckedTextView
+        android:id="@+id/txtContactInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/checkedTextView2"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/btnUpdateContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txtContactInfo"
+        android:layout_below="@+id/txtUpdatePhone"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="32dp"
+        android:onClick="onClick"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnUpdateContact"
+        android:layout_alignBottom="@+id/btnUpdateContact"
+        android:layout_marginLeft="31dp"
+        android:layout_toRightOf="@+id/btnUpdateContact"
+        android:onClick="onClick"
+        android:text="Back" />
+    
+</RelativeLayout>
